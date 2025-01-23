@@ -1,0 +1,17 @@
+@use "vars" as *;
+
+main{
+	padding: 82px 0 0;
+	@include mq(tb){
+		padding: 75px 0 0;
+	}
+}
+
+.inner {
+	display: block;
+	max-width: 1280px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+

@@ -1,0 +1,79 @@
+@use "vars" as *;
+
+#footer{
+	background: white;
+	position: relative;
+	z-index: 1;
+	@include font-size(13);
+	padding: 50px 0 0;
+	a{
+		color: #135eeb;
+	}
+	p{
+		margin-bottom: 20px;
+		i{
+			display: inline-block;
+			margin:  0 7px 0 0;
+		}
+	}
+	.footer-logo{
+		display: block;
+		max-width: 258px;
+		margin-bottom: 20px;
+	}
+	.footer-block{
+		@include flex(0,0,wrap);
+		margin: 0 -10px 50px;
+		&__item{
+			width: 25%;
+			padding: 0 10px;
+			@include mq(){
+				width: 50%;
+				margin-bottom: 50px;
+
+			}
+			@include mq(sm){
+				width: 100%;
+				margin-bottom: 30px;
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
+		}
+		&__ttl{
+			display: block;
+			font-weight: bold;
+			@include font-size(20);
+			color: #0565af;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+			@include mq(){
+				margin-bottom: 15px;
+			}
+		}
+		&__menu{
+			li{
+				margin-bottom: 10px;
+				&:last-child{
+					margin-bottom: 0;
+				}
+				a{
+					display: block;
+					position: relative;
+					@include font-size(15);
+					font-weight: bold;
+					i{
+						display: inline-block;
+						margin: 0 7px 0 0;
+					}
+				}
+			}
+		}
+	}
+	.copyright{
+		text-align: center;
+		padding: 20px 0;
+		color: rgba(0, 0, 0, .5);
+		@include font-size(14);
+	}
+}

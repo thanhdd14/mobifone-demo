@@ -9,8 +9,7 @@ reset style
 html {
   overflow-y: scroll;
   overflow-x: hidden;
-  font-size: 10px;
-  /* Base font size, change to 14px or 16px if needed */
+  font-size: 10px; /* Base font size, change to 14px or 16px if needed */
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -1142,7 +1141,6 @@ a {
   text-decoration: none;
   -webkit-backface-visibility: hidden;
   -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 a:hover {
@@ -1230,7 +1228,6 @@ a:hover {
 @media screen and (min-width: 835px) {
   .u-fn-hover {
     -webkit-transition: all 0.2s;
-    -o-transition: all 0.2s;
     transition: all 0.2s;
   }
   .u-fn-hover:hover {
@@ -1253,27 +1250,22 @@ a:hover {
 }
 
 .c-bg--01 {
-  background: -o-linear-gradient(315deg, #ff7a88, #CD353B);
   background: linear-gradient(135deg, #ff7a88, #CD353B);
 }
 .c-bg--02 {
-  background: -o-linear-gradient(315deg, #feb984, #ff5542 102%);
   background: linear-gradient(135deg, #feb984, #ff5542 102%);
 }
 .c-bg--03 {
-  background: -o-linear-gradient(315deg, #d597d6, #974ef6 102%);
   background: linear-gradient(135deg, #d597d6, #974ef6 102%);
 }
 .c-bg--04 {
-  background: -o-linear-gradient(315deg, #ffd529, #fd8440 102%);
   background: linear-gradient(135deg, #ffd529, #fd8440 102%);
 }
 .c-bg--05 {
-  background: -o-linear-gradient(315deg, #49e9bb, #2EC16C);
   background: linear-gradient(135deg, #49e9bb, #2EC16C);
 }
 .c-bg--gray {
-  background-color: #eef5ff !important;
+  background-color: rgb(238, 245, 255) !important;
 }
 
 .c-al--c {
@@ -1345,7 +1337,6 @@ Component
   text-align: center;
   color: #fff;
   background: -webkit-gradient(linear, left top, right top, from(#00adf5), to(#0565af));
-  background: -o-linear-gradient(left, #00adf5, #0565af);
   background: linear-gradient(to right, #00adf5, #0565af);
   border: 0;
   font-size: 1.5rem;
@@ -1389,7 +1380,6 @@ Component
   -ms-transform: translate(0, 0);
   transform: translate(0, 0);
   -webkit-transition: 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  -o-transition: 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition: 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
@@ -1458,10 +1448,9 @@ main {
     padding: 40px 0;
     overflow-y: scroll;
     width: 300px;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: hsla(0, 0%, 100%, 0.95);
     -webkit-backface-visibility: hidden;
     -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
     z-index: 99;
   }
@@ -1505,7 +1494,6 @@ main {
     padding: 0 20px;
     -webkit-backface-visibility: hidden;
     -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
   #header .header-nav__menu-item.active {
@@ -1537,7 +1525,6 @@ main {
   position: absolute;
   -webkit-backface-visibility: hidden;
   -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   content: "";
   width: 0;
@@ -1637,7 +1624,7 @@ main {
 }
 #header .header-nav__menu-submenu li {
   border-bottom: 1px solid #ececec;
-  border-color: rgba(255, 255, 255, 0.2);
+  border-color: hsla(0, 0%, 100%, 0.2);
 }
 #header .header-nav__menu-submenu li:last-child {
   border-bottom: none;
@@ -1648,7 +1635,7 @@ main {
   line-height: 1.3;
   padding: 12px 0;
   font-size: 1.6rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: hsla(0, 0%, 100%, 0.8);
 }
 @media screen and (max-width: 834px) {
   #header .header-nav__menu-submenu li a {
@@ -1671,7 +1658,6 @@ main {
   background: rgba(0, 0, 0, 0.7);
   -webkit-backface-visibility: hidden;
   -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   z-index: -99;
   opacity: 0;
@@ -1702,7 +1688,6 @@ main {
   cursor: pointer;
   -webkit-backface-visibility: hidden;
   -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   font-size: 1.8rem;
   position: absolute;
@@ -1739,7 +1724,6 @@ main {
   visibility: hidden;
   -webkit-backface-visibility: hidden;
   -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 #header .header-search.active {
@@ -1756,7 +1740,6 @@ main {
   background: rgba(0, 0, 0, 0.58);
   -webkit-backface-visibility: hidden;
   -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 #header .header-search__icon {
@@ -1767,7 +1750,6 @@ main {
   opacity: 0.6;
   -webkit-backface-visibility: hidden;
   -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   z-index: 3;
 }
@@ -1781,7 +1763,7 @@ main {
   z-index: 4;
 }
 #header .header-search__box-input {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: hsla(0, 0%, 100%, 0.2);
   display: block;
   width: 100%;
   height: 67px;
@@ -1854,7 +1836,6 @@ main {
   cursor: pointer;
   -webkit-backface-visibility: hidden;
   -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 @media screen and (max-width: 1024px) {
@@ -1882,7 +1863,6 @@ main {
   display: none;
   -webkit-backface-visibility: hidden;
   -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 @media screen and (max-width: 1024px) {
@@ -1911,7 +1891,6 @@ main {
   content: "";
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
-  -o-transition: transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
   border-radius: 3px;
@@ -2342,6 +2321,7 @@ main {
 @media screen and (max-width: 834px) {
   .post-detail {
     padding-top: 20px;
+    padding-bottom: 0;
     background: #fff;
   }
 }
@@ -2518,7 +2498,6 @@ main {
   text-align: center;
   color: #fff;
   background: -webkit-gradient(linear, left top, right top, from(#00adf5), to(#0565af));
-  background: -o-linear-gradient(left, #00adf5, #0565af);
   background: linear-gradient(to right, #00adf5, #0565af);
   border: 0;
   font-size: 15px;
@@ -2546,6 +2525,23 @@ main {
   .post-detail__sidebar {
     width: 100%;
     padding: 0;
+  }
+}
+.post-detail__relative {
+  width: 73%;
+  margin-top: 30px;
+}
+@media screen and (max-width: 834px) {
+  .post-detail__relative {
+    width: 100%;
+  }
+}
+.post-detail__relative .c-ttl__01 {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 835px) {
+  .post-detail__relative .product-list__item {
+    width: 33.33%;
   }
 }
 
@@ -2592,7 +2588,6 @@ main {
   top: -5px;
   -webkit-backface-visibility: hidden;
   -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .box-widget__list-link:hover {

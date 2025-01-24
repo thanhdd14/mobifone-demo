@@ -5,6 +5,7 @@
 	padding: 50px 0;
 	@include mq{
 		padding-top: 20px;
+		padding-bottom: 0;
 		background: #fff;
 	}
 	&__wrapper{
@@ -177,6 +178,24 @@
 		@include mq{
 			width: 100%;
 			padding: 0;
+		}
+	}
+
+	&__relative{
+		width: 73%;
+		margin-top: 30px;
+		@include mq{
+			width: 100%;
+		}
+		.c-ttl__01{
+			margin-bottom: 30px;
+		}
+		.product-list{
+			&__item{
+				@include mq(md-min){
+					width: 33.33%;
+				}
+			}
 		}
 	}
 }
